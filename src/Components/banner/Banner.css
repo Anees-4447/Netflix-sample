@@ -1,8 +1,9 @@
 .banner{
-    background-image: url('../../../public/images/money-heist-professor.jpg');
-    height: 362px;
+    height: 335px;
     background-size: cover;
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .content{
    padding-top: 50px;
