@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Row.css'
+import axios from '../../axios'
 function Row() {
+    useEffect(()=>{
+        axios.get()
+    },[])
   return (
     <div className="row">
         <h1 className="title">Netflix Originals</h1>
