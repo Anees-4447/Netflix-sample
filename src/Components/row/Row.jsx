@@ -20,11 +20,11 @@ function Row({ title, fetchUrl }) {
   return (
     <div className="row">
       <h1 className="title">{title}</h1>
+      <div className="posters">
       {movies?.map((items) => (
-        <div className="posters">
           <img src={`${imageUrl}/${items.backdrop_path}`} alt={items.title || ""} />
+        ))}
         </div>
-      ))}
     </div>
   );
 }
