@@ -17,7 +17,7 @@ function Banner({ title, fetchUrl }) {
     fetchData();
   }, []);
   return (
-    <div style={{backgroundImage:`url(${movies ? imageUrl+movies.backdrop_path : "" })`}}>
+    <div  className="banner-image" style={{backgroundImage:`url(${movies ? imageUrl+movies.backdrop_path : "" })`}}>
       <div className="banner">
       {movies && (
         <div className="content">
