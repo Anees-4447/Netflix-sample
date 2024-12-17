@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Row.css";
 import instance from "../../instence";
 import YouTube from "react-youtube";
-import { imageUrl } from "../../constants";
-import {API_KEY} from '../../constants'
-import axios from "axios";
+import { imageUrl,API_KEY} from "../../constants";
+
 
 function Row({ title, fetchUrl, isSmall }) {
   const [movies, setMovies] = useState([]);
