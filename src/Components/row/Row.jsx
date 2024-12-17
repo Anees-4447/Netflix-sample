@@ -3,7 +3,7 @@ import "./Row.css";
 import instance from "../../instence";
 import { imageUrl } from "../../constants";
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isSmall }) {
   const [movies, setMovies] = useState([]);
   const fetchData = async () => {
     try {
@@ -22,7 +22,7 @@ function Row({ title, fetchUrl }) {
       <h1 className="title">{title}</h1>
       <div className="posters">
       {movies?.map((items) => (
-          <img src={`${imageUrl}/${items.backdrop_path}`} alt={items.title || ""} />
+          <img className={ isSmall? 'smallPoster_img' :'posters_img'}  src={`${imageUrl}/${items.backdrop_path}`} alt={items.title || ""} />
         ))}
         </div>
     </div>

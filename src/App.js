@@ -10,17 +10,19 @@ function App() {
       <Nav/>
       <Banner title="" fetchUrl={requests.fetchTrending} />
 
-      <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
+      <Row title='NetflixOriginals'  fetchUrl={requests.fetchNetflixOriginals}/>
 
-      <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies}  />
+      <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} isSmall />
 
-      <Row title="Comedy Movies" fetchUrl = {requests.fetchComedyMovies}  />
+      <Row title="Action Movies" fetchUrl = {requests.fetchActionMovies} isSmall />
 
-      <Row title="Horror Movies" fetchUrl = {requests.fetchHorrorMovies}  />
+      <Row title="Comedy Movies" fetchUrl = {requests.fetchComedyMovies} isSmall />
 
-      <Row title="Romance Movies" fetchUrl = {requests.fetchRomanceMovies}  />
+      <Row title="Horror Movies" fetchUrl = {requests.fetchHorrorMovies} isSmall />
 
-      <Row title="Documentaries" fetchUrl = {requests.fetchDocumentaries}  />
+      <Row title="Romance Movies" fetchUrl = {requests.fetchRomanceMovies} isSmall  />
+
+      <Row title="Documentaries" fetchUrl = {requests.fetchDocumentaries} isSmall />
     </div>
   );
 }

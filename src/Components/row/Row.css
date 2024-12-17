@@ -10,14 +10,25 @@
    display: flex;
    padding: 20px;
    overflow-x: scroll;
-   overflow-y: hidden;
+   overflow-y: hidden; 
+   max-height: 250px;
 
 }
-.posters img{
-    max-height: 200px;
+.posters_img{
+    max-height: 100%;
+    max-height: 250px;
     margin-right: 20px;
 }
-.posters img:hover {
+.smallPoster_img{
+    max-height: 150px;
+    margin-right: 20px;
+}
+.smallPoster_img:hover{
+    transform: scale(1.2) translateY(-10px); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); 
+    animation: bounce 0.6s ease infinite alternate; 
+}
+.posters_img:hover {
     transform: scale(1.2) translateY(-10px); 
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8); 
     animation: bounce 0.6s ease infinite alternate; 
