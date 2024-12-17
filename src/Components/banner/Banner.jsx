@@ -15,7 +15,7 @@ function Banner({ title, fetchUrl }) {
   };
   useEffect(() => {
     fetchData();
-  }, [fetchUrl]);
+  }, []);
   return (
     <div style={{backgroundImage:`url(${movies ? imageUrl+movies.backdrop_path : "" })`}}>
       <div className="banner">

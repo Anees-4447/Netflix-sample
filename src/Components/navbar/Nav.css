@@ -1,5 +1,10 @@
 .nav{
-    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: transparent;
 }
 .nav img{
     max-width: 200px;
